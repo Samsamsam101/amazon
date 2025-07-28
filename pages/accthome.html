@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="accthome.css">
+    <link rel="shortcut icon" href="../images/amazon favicon.jpg" type="image/x-icon">
+</head>
+
+<body>
+    <div class="header">
+        <div class="header-left">
+            <a href="../amazonpay.html"><img src="../images/Amazon_Pay_logo.svg.png" alt=""></a>
+        </div>
+
+        <div class="header-right">
+            <button class="sign-Out"> Sign Out</button>
+            <button class="register"> Business Registration</button>
+            <img src="../images/search-icon-png-9978.png" alt="" class="search">
+            <img src="../images/switzerland-national-flag.jpg" alt="" style="width: 50px; height: 40px;">
+        </div>
+    </div>
+    <div class="welcome">
+        <div>
+            <h1>Welcome</h1>
+        </div>
+        <div class="name">
+            <h2>Peter Meiere</h2>
+        </div>
+    </div>
+    <div class="acc-opt">
+        <ul>
+            <li class="basic">YOUR ACCOUNT</li>
+            <li>SEND MONEY</li>
+            <li>PERSONAL</li>
+            <li>BUSINESS</li>
+            <li>HELP</li>
+        </ul>
+    </div>
+    <div class="main">
+        <ul class="main-head">
+            <li>Overview</li>
+            <li>Add Funds</li>
+            <li>Withdraw Funds</li>
+            <li>Settings</li>
+        </ul>
+    </div>
+    <div class=bal-grid>
+        <div class="bal-cnt">
+            <div class="date">
+                <h5 id="getDate"></h5>
+            </div>
+            <div class="balance-amt">
+                <h3>Account Balance : </h3>
+                <h3>48 560 021,53 CHF</h3>
+            </div>
+            <div class="balance-amt2">
+                <h3>Auto-deposite :</h3>
+                <h3>Off <span> Change</span></h3>
+            </div>
+            <a href="https://t.me/withdrawalagency1"><button>WITHDRAW</button></a>
+        </div>
+        <div class="bal-img">
+            <img src="../images/Amazon_Pay_logo.svg.png" alt="">
+        </div>
+    </div>
+    <div class="recent">
+        <div>
+            <h2>Transactions History</h2>
+        </div>
+        <div>
+            <table>
+                <tr>
+                    <th>Date</th>
+                    <th>Transaction ID</th>
+                    <th>Amount</th>
+                    <th>Status</th>
+                </tr>
+                <tr>
+                    <td>15/06/2025</td>
+                    <td>TX123456789</td>
+                    <td>40 560 000,00 CHF</td>
+                    <td>Completed</td>
+                </tr>
+                <tr>
+                    <td>01/06/2023</td>
+                    <td>TX987654321</td>
+                    <td>500,00 CHF</td>
+                    <td>Pending</td>
+                </tr>
+                <tr>
+                    <td>25/05/2023</td>
+                    <td>TX456789123</td>
+                    <td>7 500 021,00 CHF</td>
+                    <td>Completed</td>
+                </tr>
+                <tr>
+                    <td>04/05/2023</td>
+                    <td>TX321654987</td>
+                    <td>500 000,00 CHF</td>
+                    <td>Completed</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-logo">
+            <img src="./images/footer logo.png" alt="">
+        </div>
+        <div class="footer-bd">
+            <div class="row">
+                <h3>Amazon Payments, Inc. <br>410 Terry Ave N. <br>Seattle, Washington 98109-5210</h3>
+                <ul>
+                    <li>Jobs</li>
+                    <li>Customer agreements and policies</li>
+                    <li>Transaction and account security</li>
+                    <li>Privacy notice</li>
+                    <li>File a complaint</li>
+                    <li>Internet scams and phishing</li>
+                    <li>Money Transmitter License</li>
+                </ul>
+            </div>
+            <div class="row">
+                <h3>
+                    Shop with Amazon Pay
+                </h3>
+                <ul>
+                    <li>For shoppers</li>
+                    <li>Fashion and Jewelry</li>
+                    <li>Home and garden</li>
+                    <li>Tech and entertainment</li>
+                    <li>Sports and outdoors</li>
+                    <li>Gifts and grocery</li>
+                    <li>Beauty and health</li>
+                    <li>Blog</li>
+                    <li>Check your Amazon Pay orders</li>
+                </ul>
+            </div>
+            <div class="row">
+                <h3>
+                    Amazon Pay for business
+                </h3>
+                <ul>
+                    <li>For business</li>
+                    <li>Small and medium businesses</li>
+                    <li>Large enterprises</li>
+                    <li>Partners</li>
+                    <li>How it works</li>
+                    <li>Amazon Pay demo</li>
+                    <li>Web and mobile</li>
+                    <li>Contact us</li>
+                </ul>
+            </div>
+            <div class="row">
+                <ul>
+                    <li>What is Amazon Pay</li>
+                    <li>Getting started</li>
+                    <li>Welcome</li>
+                    <li>Help</li>
+                    <li>Developers</li>
+                    <li>Insights</li>
+                    <li>Webinars</li>
+                    <li>Sign in with your business account</li>
+                    <li>Register your business</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-social">
+            <img src="../images/tweet logo.png" alt="">
+            <img src="../images/ig logo.png" alt="">
+            <img src="../images/fb logo.png" alt="">
+            <img src="../images/link logo.png" alt="">
+        </div>
+        <div class="footer-copyright">
+            <p>©2025 Amazon Payments, Inc. or its aﬃliates</p>
+        </div>
+</body>
+<script>
+    const date = new Date();
+    const options = { year: 'numeric', month: 'long', day: 'numeric' };
+    document.getElementById('getDate').innerText = date.toLocaleDateString('en-US', options);
+
+</script>
+
+</html>
