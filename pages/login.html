@@ -12,7 +12,7 @@
 
     <div class="header">
         <div class="header-left">
-           <a href="../index.html"><img src="../images/Amazon_Pay_logo.svg.png" alt=""></a>
+            <a href="../index.html"><img src="../images/Amazon_Pay_logo.svg.png" alt=""></a>
             <a href=""> <span>Businesses ></span></a>
             <a href=""> <span>Integrations ></span></a>
             <a href=""> <span>Resources ></span></a>
@@ -26,13 +26,23 @@
             <img src="../images/switzerland-national-flag.jpg" alt="" style="width: 50px; height: 40px;">
         </div>
     </div>
+    <div class="navbar">
+        <div class="logo"><img src="../images/Amazon_Pay_logo.svg.png" alt=""></div>
+        <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+        <nav class="nav-links" id="nav-links">
+            <a href="#">Home</a>
+            <a href="./pages/login.html">Sign In</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </nav>
+    </div>
     <div class="welcome">
         <img src="../images/Amazon_Pay_logo.svg.png" alt="">
         <h1>Welcome to Amazon Pay</h1>
         <p>Please login to continue</p>
     </div>
     <div class="login-container">
-         <h1>Sign In</h1>
+        <h1>Sign In</h1>
         <form action="#" method="post">
             <div class="input-group">
                 <label for="email">Email:</label>
@@ -119,5 +129,12 @@
             <p>©2025 Amazon Payments, Inc. or its aﬃliates</p>
         </div>
 </body>
+<script>
+     const toggle = document.getElementById('menu-toggle');
+    const nav = document.getElementById('nav-links');
 
+    toggle.addEventListener('click', () => {
+      nav.classList.toggle('active');
+    });
+</script>
 </html>

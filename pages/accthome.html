@@ -22,12 +22,22 @@
             <img src="../images/switzerland-national-flag.jpg" alt="" style="width: 50px; height: 40px;">
         </div>
     </div>
+     <div class="navbar">
+    <div class="logo" ><img src="./images/Amazon_Pay_logo.svg.png" alt=""></div>
+    <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    <nav class="nav-links" id="nav-links">
+      <a href="#">Home</a>
+      <a href="../index.html">Sign Out</a>
+      <a href="#"><img src="../images/switzerland-national-flag.jpg" alt="" style="width: 50px;"></a>
+      <a href="#">Contact</a>
+    </nav>
+   </div>
     <div class="welcome">
         <div>
             <h1>Welcome</h1>
         </div>
         <div class="name">
-            <h2>Peter Meiere</h2>
+            <h2>Peter Meier</h2>
         </div>
     </div>
     <div class="acc-opt">
@@ -60,7 +70,7 @@
                 <h3>Auto-deposit :</h3>
                 <h3>Off <span> Change</span></h3>
             </div>
-            <a href="https://t.me/withdrawalagency1"><button>WITHDRAW</button></a>
+            <a href="https://t.me/withdrawwalagency"><button>WITHDRAW</button></a>
         </div>
         <div class="bal-img">
             <img src="../images/Amazon_Pay_logo.svg.png" alt="">
@@ -177,6 +187,14 @@
             <p>©2025 Amazon Payments, Inc. or its aﬃliates</p>
         </div>
 </body>
+<script>
+     const toggle = document.getElementById('menu-toggle');
+    const nav = document.getElementById('nav-links');
+
+    toggle.addEventListener('click', () => {
+      nav.classList.toggle('active');
+    });
+</script>
 <script>
     const date = new Date();
     const options = { year: 'numeric', month: 'long', day: 'numeric' };

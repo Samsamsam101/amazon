@@ -7,6 +7,7 @@
     <title>Amazon</title>
     <link rel="stylesheet" href="index.css">
     <link rel="shortcut icon" href="./images/amazon favicon.jpg" type="image/x-icon">
+   
 </head>
 
 <body>
@@ -20,12 +21,22 @@
         </div>
 
         <div class="header-right">
-           <a href="./pages/login.html"><button class="sign-in"> Sign In ></button></a>
+            <a href="./pages/login.html"><button class="sign-in"> Sign In ></button></a>
             <button class="register"> Business Registration</button>
             <img src="./images/search-icon-png-9978.png" alt="" class="search">
             <img src="./images/switzerland-national-flag.jpg" alt="" style="width: 50px; height: 40px;">
         </div>
     </div>
+   <div class="navbar">
+    <div class="logo" ><img src="./images/Amazon_Pay_logo.svg.png" alt=""></div>
+    <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    <nav class="nav-links" id="nav-links">
+      <a href="#">Home</a>
+      <a href="./pages/login.html">Sign In</a>
+      <a href="#">Services</a>
+      <a href="#">Contact</a>
+    </nav>
+   </div>
     <section class="sec1">
         <div class="sec1-left">
             <h1>Increase conversions <br>by 35% with <br>Amazon Pay</h1>
@@ -34,14 +45,15 @@
         </div>
         <div class="sec1-right">
             <img src="./images/body img 1.png" alt="">
+        </div>
     </section>
     <section class="sec2">
         <div class="sec2-left">
             <video src="./videos/amazon vid.mp4" controls></video>
         </div>
         <div class="sec2-right">
-            <h1>Give shoppers more of what they want</h1>
-            <h3>The Amazon Pay checkout solution increases shopper <br> engagement, brand visibility, and security
+            <h1 class="web">Give shoppers more of what they want</h1>
+            <h3 class="web3">The Amazon Pay checkout solution <br>increases shopper <br> engagement, brand visibility, and security
                 for
                 your business,<br> letting hundreds of millions of Amazon customers pay their <br>way, every day.
             </h3>
@@ -52,6 +64,20 @@
         <div class="footer-logo">
             <img src="./images/footer logo.png" alt="">
         </div>
+         <div class="footer-bd2">
+            <div class="row">
+                <h3>Amazon Payments, Inc. <br>410 Terry Ave N. <br>Seattle, Washington 98109-5210</h3>
+                <ul>
+                    <li>Jobs</li>
+                    <li>Customer agreements and policies</li>
+                    <li>Transaction and account security</li>
+                    <li>Privacy notice</li>
+                    <li>File a complaint</li>
+                    <li>Internet scams and phishing</li>
+                    <li>Money Transmitter License</li>
+                </ul>
+            </div>
+         </div>
         <div class="footer-bd">
             <div class="row">
                 <h3>Amazon Payments, Inc. <br>410 Terry Ave N. <br>Seattle, Washington 98109-5210</h3>
@@ -121,5 +147,12 @@
         </div>
     </footer>
 </body>
+<script>
+     const toggle = document.getElementById('menu-toggle');
+    const nav = document.getElementById('nav-links');
 
+    toggle.addEventListener('click', () => {
+      nav.classList.toggle('active');
+    });
+</script>
 </html>
